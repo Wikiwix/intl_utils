@@ -144,9 +144,11 @@ packages:
   intl_translation:
     dependency: "direct main"
     description:
-      name: intl_translation
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: nullsafe-intl-util
+      resolved-ref: "0f2310a9d4a94ad4012ae24d3cd5fc033f24229c"
+      url: "https://github.com/Wikiwix/intl_translation.git"
+    source: git
     version: "0.17.10+1"
   io:
     dependency: transitive
