@@ -9,7 +9,10 @@ environment:
 dependencies:
   args: '>=0.12.1 <2.0.0'
   archive: ^2.0.13
-  intl_translation: 0.17.10+1
+  intl_translation: # 0.17.10+1
+    git:
+      url: https://github.com/Wikiwix/intl_translation.git
+      ref: nullsafe-intl-util
   http: ^0.12.2
   path: ^1.7.0
   petitparser: ^3.1.0
@@ -20,8 +23,7 @@ dev_dependencies:
   test: ^1.9.4
   mockito: ^4.0.0
 
-dependency_overrides:
-  intl_translation: # To annotate the first line as non-null-safe
-    git:
-      url: https://github.com/Wikiwix/intl_translation.git
-      ref: nullsafe-intl-util
+# dependency_overrides:
+#   intl_translation: # To annotate the first line as non-null-safe
+
+publish_to: none
